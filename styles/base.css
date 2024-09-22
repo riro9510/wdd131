@@ -1,0 +1,145 @@
+/* Paleta de colores */
+:root {
+    --theme-color: rgb(20, 78, 111);
+    --secondary-color: #333333;
+    --accent-color: #faf853;
+    --background-default-color : #ffff;
+    --default-text: #000;
+}
+* {
+    font-family: 'Arial', sans-serif; /* Aplica la fuente a todos los elementos */
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto total */
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Cambia según tu preferencia */
+    color: white; /* Color de texto por defecto */
+    background-color: var(--background-default-color);
+}
+
+header {
+    grid-area: header;
+    background-color: var(--theme-color);
+  
+}
+
+nav {
+    display: flex;
+    align-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    gap:20px;
+    width: 100%;
+}
+
+nav li {
+    margin-right: 15px;
+}
+nav li:hover {
+    background-color: var(--theme-color); /* Cambia el color de fondo al pasar el mouse */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados */
+    transition: background-color 0.3s; /* Suaviza la transición del color */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.mainArea {
+    grid-area: main;
+}
+
+.asideArea {
+    grid-area: aside;
+    background-color: var(--background-color);
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: var(--theme-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.themeColor {
+    color: white; /* Asegura que el texto sea blanco */
+    background-color: var(--theme-color);
+    margin-top: 0; /* Elimina el margen superior */
+    padding-top: 0; /* Asegúrate de que no haya padding superior */
+}
+.smallTitlesStyle{
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+}
+.card{
+    border: .5px solid black;
+    border-radius: 5px;
+    margin:1rem;
+}
+.titleFont {
+    font-size: 35; /* Usa la misma fuente */
+    text-align: center;
+    padding-top:1rem;
+}
+.aboutMeClass{
+    color:var(--default-text);
+    padding: 20px; /* Espaciado interno */
+    text-align: justify; /* Justifica el texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 20px; /* Tamaño de fuente */
+    margin: 1rem 0; /* Margen superior e inferior */
+
+}
+.element1{
+    display: grid;
+    grid-template-areas:"parrafo1 imagen1" ;
+    grid-template-columns: 3fr 1fr;
+    margin: 1rem;
+
+}
+.element2{
+    display: grid;
+    grid-template-areas:"imagen2 parrafo2" ;
+    grid-template-columns: 1fr 3fr;
+    margin: 1rem;
+    gap: 50px;
+}
+
+.element1 p {
+    grid-area: parrafo1;
+
+}
+.element1 img{
+    grid-area: imagen1;
+}
+.element2 p{
+    grid-area: parrafo2;
+}
+.element2 img{
+    grid-area: imagen2;
+
+}
+.picturesAboutMe{
+    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para un efecto más suave */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    margin: 1rem; /* Espaciado vertical para separar imágenes de otros elementos */
+    display: block; /* Asegura que no haya espacio adicional debajo de la imagen */
+}
