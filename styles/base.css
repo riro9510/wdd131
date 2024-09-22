@@ -1,4 +1,4 @@
-/* Paleta de colores */
+
 :root {
     --theme-color: rgb(20, 78, 111);
     --secondary-color: #333333;
@@ -7,8 +7,8 @@
     --default-text: #000;
 }
 * {
-    font-family: 'Arial', sans-serif; /* Aplica la fuente a todos los elementos */
-    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto total */
+    font-family: 'Arial', sans-serif; 
+    box-sizing: border-box; 
 }
 
 body {
@@ -20,8 +20,8 @@ body {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto 1fr auto;
     margin: 0;
-    font-family: Arial, sans-serif; /* Cambia según tu preferencia */
-    color: white; /* Color de texto por defecto */
+    font-family: 'Roboto', sans-serif; 
+    color: white; 
     background-color: var(--background-default-color);
 }
 
@@ -50,9 +50,9 @@ nav li {
     margin-right: 15px;
 }
 nav li:hover {
-    background-color: var(--theme-color); /* Cambia el color de fondo al pasar el mouse */
-    border-radius: 5px; /* Opcional: agrega bordes redondeados */
-    transition: background-color 0.3s; /* Suaviza la transición del color */
+    background-color: var(--theme-color); 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
 }
 nav a {
     color: white;
@@ -77,10 +77,10 @@ footer {
 }
 
 .themeColor {
-    color: white; /* Asegura que el texto sea blanco */
+    color: white; 
     background-color: var(--theme-color);
-    margin-top: 0; /* Elimina el margen superior */
-    padding-top: 0; /* Asegúrate de que no haya padding superior */
+    margin-top: 0; 
+    padding-top: 0; 
 }
 .smallTitlesStyle{
     font-size: 1rem;
@@ -93,17 +93,18 @@ footer {
     margin:1rem;
 }
 .titleFont {
-    font-size: 35; /* Usa la misma fuente */
+    font-size: 35px; 
     text-align: center;
     padding-top:1rem;
+    font-family: 'Roboto', sans-serif;
 }
 .aboutMeClass{
     color:var(--default-text);
-    padding: 20px; /* Espaciado interno */
-    text-align: justify; /* Justifica el texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    font-size: 20px; /* Tamaño de fuente */
-    margin: 1rem 0; /* Margen superior e inferior */
+    padding: 20px; 
+    text-align: justify; 
+    line-height: 1.6; 
+    font-size: 20px;
+    margin: 1rem 0;
 
 }
 .element1{
@@ -136,10 +137,10 @@ footer {
 
 }
 .picturesAboutMe{
-    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho de su contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Bordes redondeados para un efecto más suave */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
-    margin: 1rem; /* Espaciado vertical para separar imágenes de otros elementos */
-    display: block; /* Asegura que no haya espacio adicional debajo de la imagen */
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin: 1rem; 
+    display: block; 
 }
