@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+    .root{
+        --background_blueish_color: #e7f3ff
+    }
+    body{
+        font-family: "Roboto",sans-serif;
+    }
+    header,main,footer{
+        margin: 1rem auto;
+        padding:1rem;
+        background-color:var(--background_blueish_color);
+    
+    }
+    header{
+        background-color: #000;
+        color: #ffffff;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    section{
+        padding: 1rem;
+        background-color: #ffffff;
+    }
+}
