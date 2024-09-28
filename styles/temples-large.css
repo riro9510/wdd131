@@ -55,6 +55,9 @@
         text-decoration: none; /* Eliminar subrayado */
         color: var(--accent-color);
     }
+    .nav a:hover {
+        color:var(--secondary-color)
+    }
     
     /* Estilos para el botón hamburguesa */
     .hamburger {
