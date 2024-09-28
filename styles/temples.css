@@ -19,10 +19,7 @@ body{
 figure{
     text-align: center;
 }
-h2{ 
-    text-align: center;
-    color: var(--text-color);
-}
+
 header,main,footer{
     margin: 1rem auto;
     padding:1rem;
@@ -86,12 +83,17 @@ header h1{
     color: var(--accent-color);
 }
 main{
+    width: 450px;
     display: grid;
     grid-template-columns: 1fr; 
     justify-items: center;
     align-items: center;
     gap: 1rem;
     
+}
+h2{ 
+    text-align: center;
+    color: var(--text-color);
 }
 figcaption{
     color:var(--text-color);
