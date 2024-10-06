@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A country call Mexico</title>
+    <meta name="description" content="Mexico - Ricardo Ramos Olivares">
+    <meta name="author" content="Ricardo Ramos Olivaraes ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400">
+    <link rel="stylesheet" href="styles/country.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windChill.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Mexico</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/piramid-large.webp" media="(min-width: 1500px)">
+            <source srcset="images/piramid-medium.webp" media="(min-width: 1000px)">
+            <img src="images/piramid-small.webp" alt="ruins of ancient Mexican cultures" width="500" height="250">
+          </picture>
+        <section class = "card data">
+            <section class="weatherSection">
+            <h2>Data</h2>
+        </section>
+            <ul>
+                <li><strong>Area:</strong> 1,964,375 sq km</li>
+                <li><strong>Population:</strong> 127,500,000</li>
+                <li><strong>Capital:</strong> Mexico City</li>
+                <li><strong>Languages:</strong> Spanish</li>
+                <li><strong>Currency:</strong> Mexican Peso (MXN)</li>
+                <li><strong>Time Zone:</strong> UTC-6</li>
+                <li><strong>Calling Code:</strong> +52</li>
+                <li><strong>Internet TLD:</strong> .mx</li>
+            </ul>
+        </section>
+        <section class="card weather">
+            <section class="weatherSection">
+            <h2>Weather</h2>
+            <object type="image/svg+xml" data="images/sunny.svg"  width="50" height="50">Your browser does not support SVG</object>
+        </section>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temperature">25 °C</span></li> 
+                <li><strong>Conditions:</strong> Sunny</li>
+                <li><strong>Wind:</strong> <span id="wind-speed">15 km/h</span></li>               
+                <li><strong>Wind Chill:</strong> <span id="wind-chill-display">Calculating...</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p></p>
+        <p></p>
+    </footer>
+</body>
+</html>
