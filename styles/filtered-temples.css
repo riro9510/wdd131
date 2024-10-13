@@ -1,8 +1,8 @@
 .root{
-    --background-color: #F0F4F8; /* Fondo principal */
-    --text-color: #1E2A78;       /* Títulos y texto principal */
-    --accent-color: #F57C20;     /* Color de acento */
-    --secondary-color: #3D9970;  /* Color secundario */
+    --background-color: #F0F4F8;
+    --text-color: #1E2A78;       
+    --accent-color: #F57C20;     
+    --secondary-color: #3D9970;  
     --white: #FFFFFF;     
 }
 .card{
@@ -92,16 +92,16 @@ nav {
     padding: 10%;
 }
 
-/* Agregar estilos para la lista del menú cuando está abierto */
+
 .nav.open ul {
     text-align: center;
-    flex-direction: column; /* Cambiar a columna */
+    flex-direction: column; 
     padding: 0;
     list-style-type: none;
 }
 
 .nav.open li {
-    margin: 0.5rem 0; /* Espaciado vertical entre elementos del menú */
+    margin: 0.5rem 0; 
 }
 .nav.open li a{
    text-decoration: none;

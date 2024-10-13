@@ -1,8 +1,8 @@
 :root{
-    --background-color: #F0F4F8; /* Fondo principal */
-    --text-color: #1E2A78;       /* Títulos y texto principal */
-    --accent-color: #F57C20;     /* Color de acento */
-    --secondary-color: #3D9970;  /* Color secundario */
+    --background-color: #F0F4F8; 
+    --text-color: #1E2A78;       
+    --accent-color: #F57C20;     
+    --secondary-color: #3D9970;  
     --white: #FFFFFF;     
 }
 @media screen and (min-width: 768px) {
@@ -35,12 +35,12 @@
     nav {
         grid-area: menu;
         display: flex;
-        align-items: center; /* Mostrar el menú horizontalmente */
+        align-items: center; 
         justify-content: end;
     }
     
     nav ul {
-        display: flex; /* Hacer que la lista sea horizontal */
+        display: flex; 
         list-style: none;
         gap: 3em;
         margin: 0;
@@ -48,21 +48,21 @@
     }
     
     nav li {
-        margin: 0 1rem; /* Espaciado entre los elementos del menú */
+        margin: 0 1rem; 
     }
     
     nav a {
-        text-decoration: none; /* Eliminar subrayado */
+        text-decoration: none; 
         color: var(--accent-color);
     }
     .nav a:hover {
         color:var(--secondary-color)
     }
     
-    /* Estilos para el botón hamburguesa */
+    
     .hamburger {
-        display: none; /* Ocultar el botón hamburguesa por defecto */
-        font-size: 24px; /* Ajusta el tamaño según sea necesario */
+        display: none; 
+        font-size: 24px; 
         background: none;
         border: none;
         cursor: pointer;
