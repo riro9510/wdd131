@@ -1,0 +1,63 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #F0F0F0; /* Color de fondo secundario */
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Secciones */
+section {
+    background-color: #FFFFFF; /* Color de fondo blanco para secciones */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Títulos de Sección */
+h2 {
+    color: #2E8B57; /* Color primario para los encabezados */
+}
+
+/* Listas */
+ul {
+    margin-left: 20px;
+}
+
+/* Imagen de Wireframe */
+img {
+    display: block;
+    margin: 10px auto; /* Centrar imagen */
+}
+
+/* Estilos de Pie de Página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    color: #666; /* Color gris para el texto del pie de página */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Menos padding en pantallas pequeñas */
+    }
+
+    section {
+        padding: 10px; /* Menos padding en secciones */
+    }
+}

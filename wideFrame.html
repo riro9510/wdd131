@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+    <meta name="description" content="Description of the document">
+    <meta name="author" content="Author Name">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+    
+        .wireframe {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .mobile-view, .desktop-view {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+    
+        .header, .main-content, .footer, .sidebar {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+    
+        .desktop-view {
+            display: grid;
+            grid-template-areas:
+            "header header"
+            "main sidebar"
+            "footer footer";
+            grid-template-columns:3fr 1fr ;
+            grid-template-rows:1fr auto 1fr ;
+            gap: 5px; /* Espacio entre sidebar y main content */
+        }
+        .desktop-view .header {
+            grid-area: header;
+        }
+        .desktop-view .sidebar{
+            grid-area: sidebar;
+        }
+        .desktop-view .main-content{
+            grid-area: main;
+        }
+        .desktop-view .footer{
+            grid-area: footer;
+        }
+    
+    
+        .main-content {
+            flex: 1;
+        }
+    
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .desktop-view {
+                flex-direction: column;
+            }
+    
+            .sidebar {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Wireframe</h2>
+            
+            <div class="wireframe">
+                <h3>Mobile View</h3>
+                <div class="mobile-view">
+                    <div class="header">Header (Logo)</div>
+                    <div class="main-content">Main Content (Sections)</div>
+                    <div class="footer">Footer</div>
+                </div>
+        
+                <h3>Desktop View</h3>
+                <div class="desktop-view">
+                    <div class="header">Header (Logo, Navigation)</div>
+                    <div class="sidebar">Sidebar (Links)</div>
+                    <div class="main-content">Main Content (Sections)</div>
+                    <div class="footer">Footer</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
