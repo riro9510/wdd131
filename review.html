@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Summary</title>
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p id="reviewCount">You have completed <span id="count"></span> reviews.</p>
+    </main>
+    <script>
+        const countElement = document.getElementById('count');
+        const reviewCount = localStorage.getItem('reviewCount') || 0;
+        countElement.textContent = reviewCount;
+    </script>
+</body>
+</html>
