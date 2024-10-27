@@ -1,0 +1,304 @@
+:root {
+    --background-color: #F0F0F0; 
+    --text-color: #1E2A78;       
+    --accent-color: #2E8B57;     
+    --secondary-color: #3D9970;  
+    --white: #FFFFFF;           
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+body.dark-mode{
+    --background-color: #1E1E2E; 
+    --text-color: #FFFFFF;       
+    --accent-color: #F57C20;
+    --secondary-color: #3D9970;     
+}
+
+h1, h2, h3 {
+    color: var(--accent-color);
+}
+
+header,main,footer{
+    margin: 1rem auto;
+    padding:1rem;
+    background-color:var(--background-color);
+
+}
+/* General styles applies to sections and titles */
+.section {
+    margin: 20px 0; 
+    padding: 15px; 
+    background-color: var(--background-color); 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.section-title {
+    font-family: 'Open Sans', sans-serif; 
+    color: var(--text-color);
+    margin-bottom: 10px; 
+    font-size: 1.5rem; 
+}
+.section-paragraph {
+    font-family: 'Roboto', sans-serif; 
+    color: var(--text-color);
+    line-height: 1.6; 
+}
+/* floating bar */
+.floating-bar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.floating-bar button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.floating-bar button:hover {
+    background-color: var(--secondary-color);
+}
+/* best practice section */
+.best-practices {
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+    display: inline-block; 
+    max-width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+}
+
+code {
+    white-space: pre; 
+}
+/* Resource section */
+.resources {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resource-list {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.resource-list li {
+    margin: 10px 0; 
+}
+
+.resource-list a {
+    color: var(--accent-color);
+    text-decoration: underline; 
+}
+
+.resource-list a:hover {
+    color: var(--text-color);
+}
+/* Form section */
+.mainForm{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.formStyle {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 100%;
+    max-width: 500px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.stars {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--background-color);
+}
+.button {
+    background-color: var(--accent-color); 
+    color: var(--background-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin: 1rem;
+}
+
+button:hover {
+    background-color: var(--accent-color); 
+}
+
+
+@media screen and (max-width:767px){
+    header{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "title menu"
+        "title menu2";
+        gap:1rem;
+        position:relative;
+    }
+    nav {
+        display: none; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hamburger {
+        grid-area: menu;
+        display: block;
+        width: 40px; 
+        height: 40px;
+        align-self: center;
+        justify-self:right;
+        color: var(--accent-color);
+        border: 1px solid var(--white);
+    }
+    
+    .nav.open {
+        grid-area: menu2;
+        width: 100%;
+        display: flex; 
+        background-color: var(--white); 
+        border-radius: 5px;
+        z-index: 100; 
+        position:absolute;
+        padding: 10%;
+    }
+    
+    
+    .nav.open ul {
+        text-align: center;
+        flex-direction: column; 
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    .nav.open li {
+        margin: 0.5rem 0; 
+    }
+    .nav.open li a{
+       text-decoration: none;
+    }
+}
+@media screen and (min-width:768px){
+    header{
+        color:var(--white);
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "titulo menu";
+    }
+    header h1{
+        grid-area: titulo;
+        color: var(--accent-color);
+    }
+    nav {
+        grid-area: menu;
+        display: flex;
+        align-items: center; 
+        justify-content: end;
+    }
+    
+    nav ul {
+        display: flex; 
+        list-style: none;
+        gap: 3em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        margin: 0 1rem; 
+    }
+    
+    nav a {
+        text-decoration: none; 
+        color: var(--accent-color);
+    }
+    .nav a:hover {
+        color:var(--secondary-color)
+    }
+    
+    
+    .hamburger {
+        display: none; 
+        font-size: 24px; 
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .mainIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "title title"
+        "section1 section2"
+        "final-section final-section";
+    }
+    .title-Why{
+        grid-area:title;
+        text-align: center;
+    }
+    .section1{
+        grid-area: section1;
+    }
+    .section2{
+        grid-area:section2
+    }
+    .final-section{
+        grid-area:final-section;
+        text-align: center;
+    }
+}

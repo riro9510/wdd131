@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyAccesGuide</title>
+    <meta name="description" content="Comprehensive guide to accessibility">
+    <meta name="author" content="Ricardo Ramos Olivares ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400">
+    <link rel="stylesheet" href="styles/styleSite.css">
+    <script src="scripts/menu.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="section best-practices">
+            <h2 class="section-title">Best Practices for Web Accessibility</h2>
+            <p class="section-paragraph">Implementing web accessibility is not just about compliance; it's about creating a better user experience for everyone. Here are some best practices to consider:</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Semantic HTML</h3>
+                    <p class="grid-item-paragraph">Using proper HTML tags helps search engines and assistive technologies understand the content structure, making it easier for all users to navigate.</p>
+                    <pre><code>&lt;h1&gt;Main Title&lt;/h1&gt;
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                </div>
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Text Alternatives</h3>
+                    <p class="grid-item-paragraph">Providing alt text for images allows screen readers to convey the content of the images to users with visual impairments.</p>
+                    <picture>
+                        <source srcset="images/Screenshot_2024-10-26_at_21.38.27_754x1332.png" media="(min-width: 1500px)">
+                        <source srcset="images/Screenshot_2024-10-26_at_21.38.27_334x188.png" media="(max-width: 999px)">
+                        <img src="images/Screenshot_2024-10-26_at_21.38.27_754x1332.png" alt="Showing ALT" width="100" height="200">
+                    </picture>
+                </div>
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Keyboard Navigation</h3>
+                    <p class="grid-item-paragraph">Ensure all interactive elements, like buttons and links, can be navigated using a keyboard to accommodate users with motor disabilities.</p>
+                    <pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
+                </div>
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Color Contrast</h3>
+                    <p class="grid-item-paragraph">Check color contrast ratios to ensure text is readable against the background, benefiting users with visual impairments.</p>
+                    <p class="grid-item-paragraph">Use tools like the WebAIM Contrast Checker to validate your colors.</p>
+                </div>
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Responsive Design</h3>
+                    <p class="grid-item-paragraph">Create layouts that adapt to various screen sizes to provide an optimal experience across devices.</p>
+                    <picture>
+                        <source srcset="images/Screenshot_2024-10-26_at_21.38.04_1336x750.png" media="(min-width: 1500px)">
+                        <source srcset="images/Screenshot_2024-10-26_at_21.38.04_334x188.png" media="(max-width: 999px)">
+                        <img src="images/Screenshot_2024-10-26_at_21.38.04_1336x750.png" alt="Responsive design" width="200" height="100">
+                    </picture>
+                </div>
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Accessible Forms</h3>
+                    <p class="grid-item-paragraph">Use clear labels for form elements and provide feedback for errors to enhance usability.</p>
+                    <pre><code>&lt;label for="name"&gt;Name:&lt;/label&gt;
+                &lt;input type="text" id="name" /&gt;</code></pre>
+                </div>
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Focus Indicators</h3>
+                    <p class="grid-item-paragraph">Ensure that focus states are visible when navigating via keyboard, helping users identify which element is currently selected.</p>
+                    <p class="grid-item-paragraph">Try navegate in this site using the TAB!.</p>
+                </div>
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Skip Navigation Links</h3>
+                    <p class="grid-item-paragraph">Provide links at the top of pages that allow users to skip directly to the main content, improving navigation efficiency.</p>
+                    <pre><code>&lt;a href="#maincontent"&gt;Skip to main content&lt;/a&gt;</code></pre>
+                </div>
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Use ARIA Wisely</h3>
+                    <p class="grid-item-paragraph">ARIA can enhance accessibility but should be used judiciously to avoid confusion.</p>
+                </div>
+                <div class="grid-item">
+                    <h3 class="grid-item-title">Testing with Users</h3>
+                    <p class="grid-item-paragraph">Gather feedback from users with disabilities during testing to identify areas for improvement.</p>
+                </div>
+            </div>
+        </section>         
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
